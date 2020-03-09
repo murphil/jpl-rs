@@ -10,8 +10,8 @@ RUN set -ex \
     | sh -s -- --default-toolchain stable -y \
   ; rustup component add rls rust-analysis rust-src clippy rustfmt \
   # gluon_repl gluon_language-server mdbook
-  ; cargo install cargo-wasi wasm-pack \
-  ; cargo install serde serde_yaml serde_json \
+  ; cargo install cargo-wasi wasm-pack cargo-prefetch \
+  ; cargo prefetch serde serde_yaml serde_json \
       clap reqwest config chrono lru-cache itertools nom handlebars \
   ; cargo install evcxr_jupyter \
   ; evcxr_jupyter --install \
