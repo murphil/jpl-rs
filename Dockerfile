@@ -8,7 +8,7 @@ RUN set -ex \
   # /opt/cargo/registry/index/github.com-*/.cargo-index-lock
   ; curl https://sh.rustup.rs -sSf \
     | sh -s -- --default-toolchain stable -y \
-  ; rustup component add rls rust-analysis rust-src clippy rustfmt \
+  ; rustup component add rust-analysis rust-src clippy rustfmt \
   ; rustup target add x86_64-unknown-linux-musl \
   # gluon_repl gluon_language-server mdbook
   ; cargo install cargo-wasi wasm-pack cargo-prefetch \
