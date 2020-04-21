@@ -10,11 +10,10 @@ RUN set -ex \
     | sh -s -- --default-toolchain stable -y \
   ; rustup component add rust-analysis rust-src clippy rustfmt \
   ; rustup target add x86_64-unknown-linux-musl \
-  # gluon_repl gluon_language-server mdbook
   ; cargo install cargo-wasi wasm-pack cargo-prefetch \
-  ; cargo prefetch serde serde_yaml serde_json \
-      structopt reqwest config chrono lru-cache itertools nom handlebars \
+  ; cargo prefetch serde serde_yaml serde_json fern \
+      reqwest actix actix-web diesel nom handlebars \
+      structopt config chrono lru-cache itertools \
   ; cargo install evcxr_jupyter \
   ; evcxr_jupyter --install \
-  #; cargo install -q iron actix actix-web may reqwest rlua \
   ; rm -rf ${CARGO_HOME}/registry/src/*
