@@ -28,4 +28,4 @@ RUN set -ex \
 RUN set -eux \
   ; nvim_home=/etc/skel/.config/nvim \
   ; $nvim_home/plugged/vimspector/install_gadget.py --enable-rust \
-  ; rm -f $nvim_home/plugged/vimspector/gadgets/linux/download/CodeLLDB/*/*.vsix
+  ; rm -f $nvim_home/plugged/vimspector/gadgets/linux/download/*/*/*.vsix
