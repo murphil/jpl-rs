@@ -11,11 +11,12 @@ RUN set -ex \
   ; rustup component add rust-analysis rust-src clippy rustfmt \
   ; rustup target add x86_64-unknown-linux-musl \
   ; cargo install cargo-wasi wasm-pack cargo-prefetch \
-  ; cargo prefetch actix actix-web \
+  ; cargo prefetch quicli structopt \
+      actix actix-web \
       serde serde_derive serde_yaml serde_json \
       slog slog-async slog-json slog-term \
       reqwest diesel nom handlebars \
-      structopt config chrono lru-cache itertools \
+      config chrono lru-cache itertools \
   ; cargo install evcxr_jupyter \
   ; evcxr_jupyter --install \
   ; rm -rf ${CARGO_HOME}/registry/src/*
