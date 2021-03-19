@@ -11,8 +11,10 @@ RUN set -ex \
   ; rustup component add rust-src clippy rustfmt \
   ; rustup target add x86_64-unknown-linux-musl \
   ; cargo install cargo-wasi wasm-pack cargo-prefetch \
-  ; cargo prefetch quicli structopt \
+  ; cargo prefetch \
+      quicli structopt \
       actix actix-web \
+      thiserror anyhow \
       serde serde_derive serde_yaml serde_json \
       slog slog-async slog-json slog-term \
       reqwest diesel nom handlebars \
