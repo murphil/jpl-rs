@@ -17,7 +17,7 @@ RUN set -ex \
       thiserror anyhow \
       serde serde_derive serde_yaml serde_json \
       slog slog-async slog-json slog-term \
-      reqwest diesel nom handlebars \
+      reqwest oxidizer nom handlebars \
       config chrono lru-cache itertools \
   ; cargo install evcxr_jupyter \
   ; evcxr_jupyter --install \
