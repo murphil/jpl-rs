@@ -1,4 +1,4 @@
-FROM nnurphy/jpl-go
+FROM nashv1/jpl-go
 
 ### Rust
 ENV CARGO_HOME=/opt/cargo RUSTUP_HOME=/opt/rustup
